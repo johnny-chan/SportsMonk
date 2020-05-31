@@ -11,7 +11,6 @@ namespace SportsMonk.SportsMonkClient.Tests.Integration
             return new ConfigurationBuilder()
                 .SetBasePath(Environment.CurrentDirectory)
                 .AddJsonFile("appsettings.json", optional: true)
-                //.AddUserSecrets("e3dfcccf-0cb3-423a-b302-e3e92e95c128")
                 .AddUserSecrets<SportsMonkClientTests>()
                 .AddEnvironmentVariables()
                 .Build();
