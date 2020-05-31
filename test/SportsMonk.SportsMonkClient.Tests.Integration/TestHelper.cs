@@ -1,15 +1,12 @@
-﻿using System;
-using System.Reflection;
-using Microsoft.Extensions.Configuration;
+﻿using Microsoft.Extensions.Configuration;
 
 namespace SportsMonk.SportsMonkClient.Tests.Integration
 {
     public static class TestHelper
     {
-        public static IConfigurationRoot GetIConfigurationRoot()
+        private static IConfigurationRoot GetIConfigurationRoot()
         {
             return new ConfigurationBuilder()
-                .SetBasePath(Environment.CurrentDirectory)
                 .AddJsonFile("appsettings.json", optional: true)
                 .AddUserSecrets<SportsMonkClientTests>()
                 .AddEnvironmentVariables()
