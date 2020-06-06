@@ -12,7 +12,6 @@ pool:
 
 variables:
   buildConfiguration: 'Release'
-  apiToken: $(API_TOKEN)
 
 steps:
 
