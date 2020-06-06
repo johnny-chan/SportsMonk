@@ -19,7 +19,7 @@ steps:
 - task: DotNetCoreCLI@2
   inputs:
     command: 'test'
-    projects: '/**/*Tests.Integration.csproj'
+    projects: 'test/**/*Tests.Integration.csproj'
     testRunTitle: 'Integration Tests'
 
 # - task: PublishTestResults@2
