@@ -12,6 +12,7 @@ pool:
 
 variables:
   buildConfiguration: 'Release'
+  apiToken: $(API_TOKEN)
 
 steps:
 
@@ -23,6 +24,8 @@ steps:
     command: 'test'
     projects: 'test/**/*Tests.Integration.csproj'
     testRunTitle: 'Integration Tests'
+
+
 
 # - task: PublishTestResults@2
 #   inputs:
