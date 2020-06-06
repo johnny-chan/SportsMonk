@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28729.10
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A497240E-C009-4E56-9B2C-A9B013607B33}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{08BCCD58-B45E-45CB-937A-49A0A8DA41FB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SportsMonk.SportsMonkClient.Tests.Integration", "test\SportsMonk.SportsMonkClient.Tests.Integration\SportsMonk.SportsMonkClient.Tests.Integration.csproj", "{FF209146-3D9B-4674-920F-A2DB9D6DF957}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SportsMonk.SportMonkClient", "src\SportsMonk.SportMonkClient\SportsMonk.SportMonkClient.csproj", "{E7EC1206-B83D-4D88-8488-A237181DE3B4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FF209146-3D9B-4674-920F-A2DB9D6DF957}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF209146-3D9B-4674-920F-A2DB9D6DF957}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF209146-3D9B-4674-920F-A2DB9D6DF957}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF209146-3D9B-4674-920F-A2DB9D6DF957}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7EC1206-B83D-4D88-8488-A237181DE3B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7EC1206-B83D-4D88-8488-A237181DE3B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7EC1206-B83D-4D88-8488-A237181DE3B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7EC1206-B83D-4D88-8488-A237181DE3B4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FF209146-3D9B-4674-920F-A2DB9D6DF957} = {08BCCD58-B45E-45CB-937A-49A0A8DA41FB}
+		{E7EC1206-B83D-4D88-8488-A237181DE3B4} = {A497240E-C009-4E56-9B2C-A9B013607B33}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6B2F6CB4-BA5C-4EBA-B5F3-1E42904BDE6B}
+	EndGlobalSection
+EndGlobal
