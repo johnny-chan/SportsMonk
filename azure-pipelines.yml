@@ -24,7 +24,25 @@ steps:
     projects: 'test/**/*Tests.Integration.csproj'
     testRunTitle: 'Integration Tests'
 
+- task: DotNetCoreCLI@2
+  displayName: "dotnet pack"
+  inputs:
+    command: 'pack'
+    arguments: '--configuration $(buildConfiguration)'
+    packagesToPack: 'src/SportsMonk.SportMonkClient/SportsMonk.SportMonkClient.csproj'
+    nobuild: true
+    versioningScheme: 'off'
 
+- task: NuGetCommand@2
+  displayName: 'nuget push'
+  inputs:
+    command: 'push'
+    feedsToUse: 'select'
+    packagesToPush: '$(Build.ArtifactStagingDirectory)/**/*.nupkg;!$(Build.ArtifactStagingDirectory)/**/*.symbols.nupkg'
+    nuGetFeedType: 'internal'
+    publishVstsFeed: 'SportsMonk.Api.DotNetClient'
+    versioningScheme: 'off'
+    allowPackageConflicts: true
 
 # - task: PublishTestResults@2
 #   inputs:
