@@ -39,7 +39,6 @@ steps:
     command: 'push'
     feedsToUse: 'select'
     packagesToPush: '$(Build.ArtifactStagingDirectory)/**/*.nupkg;!$(Build.ArtifactStagingDirectory)/**/*.symbols.nupkg'
-    nuGetFeedType: 'external'
     publishVstsFeed: 'SportsMonkClient/SportsMonk.Api.DotNetClient'
     versioningScheme: 'off'
     allowPackageConflicts: true
