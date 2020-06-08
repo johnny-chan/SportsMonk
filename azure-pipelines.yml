@@ -40,7 +40,7 @@ steps:
     feedsToUse: 'select'
     packagesToPush: '$(Build.ArtifactStagingDirectory)/**/*.nupkg;!$(Build.ArtifactStagingDirectory)/**/*.symbols.nupkg'
     nuGetFeedType: 'external'
-    publishVstsFeed: 'SportsMonk.Api.DotNetClient'
+    publishVstsFeed: 'SportsMonkClient/SportsMonk.Api.DotNetClient'
     versioningScheme: 'off'
     allowPackageConflicts: true
 
