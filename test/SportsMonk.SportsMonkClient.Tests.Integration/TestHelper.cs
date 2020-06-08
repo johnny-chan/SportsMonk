@@ -6,11 +6,13 @@ namespace SportsMonk.SportsMonkClient.Tests.Integration
     {
         private static IConfigurationRoot GetIConfigurationRoot()
         {
-            return new ConfigurationBuilder()
+            var configuration = new ConfigurationBuilder()
                 .AddJsonFile("appsettings.json", optional: true)
                 .AddUserSecrets<SportsMonkClientTests>()
                 .AddEnvironmentVariables()
                 .Build();
+
+            return configuration;
         }
 
         public static SportsMonkConfiguration GetSportsMonkConfiguration()
