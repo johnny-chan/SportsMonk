@@ -14,11 +14,9 @@ variables:
   buildConfiguration: 'Release'
 
 steps:
-
-- task: gittools.gitversion.gitversion-task.GitVersion@4
-  displayName: gitversion
+- task: GitVersion@5
   inputs:
-    preferBundledVersion: false
+    runtime: 'core'
 
 - script: dotnet build --configuration $(buildConfiguration)
   displayName: 'dotnet build $(buildConfiguration)'
