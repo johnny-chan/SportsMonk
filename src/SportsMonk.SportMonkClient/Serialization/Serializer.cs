@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json;
 using SportsMonk.SportMonkClient.Models;
+using SportsMonk.SportMonkClient.Models.League;
 
 namespace SportsMonk.SportMonkClient.Serialization
 {
