@@ -1,12 +1,12 @@
 ﻿using System;
 using Newtonsoft.Json;
 
-namespace SportsMonk.SportMonkClient.Models
+namespace SportsMonk.SportMonkClient.Models.League
 {
     public class League
     {
         [JsonProperty("id")]
-        public long Id { get; set; }
+        public int Id { get; set; }
 
         [JsonProperty("active")]
         public bool Active { get; set; }
@@ -15,13 +15,13 @@ namespace SportsMonk.SportMonkClient.Models
         public string Type { get; set; }
 
         [JsonProperty("legacy_id")]
-        public long? LegacyId { get; set; }
+        public int? LegacyId { get; set; }
 
         [JsonProperty("country_id")]
-        public long CountryId { get; set; }
+        public int CountryId { get; set; }
 
         [JsonProperty("logo_path")]
-        public Uri LogoPath { get; set; }
+        public string LogoPath { get; set; }
 
         [JsonProperty("name")]
         public string Name { get; set; }
@@ -30,18 +30,27 @@ namespace SportsMonk.SportMonkClient.Models
         public bool IsCup { get; set; }
 
         [JsonProperty("current_season_id")]
-        public long? CurrentSeasonId { get; set; }
+        public int? CurrentSeasonId { get; set; }
 
         [JsonProperty("current_round_id")]
-        public long? CurrentRoundId { get; set; }
+        public int? CurrentRoundId { get; set; }
 
         [JsonProperty("current_stage_id")]
-        public long? CurrentStageId { get; set; }
+        public int? CurrentStageId { get; set; }
 
         [JsonProperty("live_standings")]
         public bool LiveStandings { get; set; }
 
         [JsonProperty("coverage")]
         public Coverage Coverage { get; set; }
+
+        [JsonProperty("seasons")]
+        public Seasons Seasons { get; set; }
+
+        [JsonProperty("season")]
+        public Season Season { get; set; }
+
+        [JsonProperty("country")]
+        public Country Country { get; set; }
     }
 }
