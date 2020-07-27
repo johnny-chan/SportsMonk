@@ -3,7 +3,6 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <PackageId>SportsMonk.Api.DotNetClient</PackageId>
-    <Version>0.0.1</Version>
     <Authors>Johnny Chan</Authors>
     <Description>.net core wrapper of the SportsMonk Api</Description>
     <IsPackable>true</IsPackable>
