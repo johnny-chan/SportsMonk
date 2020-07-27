@@ -10,6 +10,7 @@ namespace SportsMonk.SportMonkClient.Serialization
         {
             MetadataPropertyHandling = MetadataPropertyHandling.Ignore,
             DateParseHandling = DateParseHandling.None,
+            NullValueHandling = NullValueHandling.Ignore,
             Converters =
             {
                 new IsoDateTimeConverter { DateTimeStyles = DateTimeStyles.AssumeUniversal }

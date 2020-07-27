@@ -5,7 +5,7 @@ namespace SportsMonk.SportMonkClient.Models.League
 {
     public class AllLeaguesResponse
     {
-        [JsonProperty("SeasonData")]
+        [JsonProperty("data")]
         public List<Models.League.League> Data { get; set; }
 
         [JsonProperty("meta")]

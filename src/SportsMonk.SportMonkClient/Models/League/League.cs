@@ -15,7 +15,7 @@ namespace SportsMonk.SportMonkClient.Models.League
         public string Type { get; set; }
 
         [JsonProperty("legacy_id")]
-        public int LegacyId { get; set; }
+        public int? LegacyId { get; set; }
 
         [JsonProperty("country_id")]
         public int CountryId { get; set; }
@@ -30,13 +30,13 @@ namespace SportsMonk.SportMonkClient.Models.League
         public bool IsCup { get; set; }
 
         [JsonProperty("current_season_id")]
-        public int CurrentSeasonId { get; set; }
+        public int? CurrentSeasonId { get; set; }
 
         [JsonProperty("current_round_id")]
-        public object CurrentRoundId { get; set; }
+        public int? CurrentRoundId { get; set; }
 
         [JsonProperty("current_stage_id")]
-        public int CurrentStageId { get; set; }
+        public int? CurrentStageId { get; set; }
 
         [JsonProperty("live_standings")]
         public bool LiveStandings { get; set; }
