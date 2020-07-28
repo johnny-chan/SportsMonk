@@ -1,9 +1,8 @@
-﻿using System;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 
 namespace SportsMonk.SportMonkClient.Models.League
 {
-    public class League
+    public class LeagueResult
     {
         [JsonProperty("id")]
         public int Id { get; set; }

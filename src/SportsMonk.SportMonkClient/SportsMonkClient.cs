@@ -3,21 +3,19 @@ using System.Threading.Tasks;
 using Flurl;
 using Flurl.Http;
 using SportsMonk.SportMonkClient.Models.League;
+using SportsMonk.SportMonkClient.Models.Standings;
 
 namespace SportsMonk.SportMonkClient
 {
-    public class SportsMonkClient : ISportsMonkClient
+    public class SportsMonkClient : ClientBase, ISportsMonkClient
     {
-        private readonly string _apiToken;
-
-        public SportsMonkClient(string apiToken)
+        public SportsMonkClient(string apiToken) : base(apiToken)
         {
-            _apiToken = apiToken;
         }
 
-        public async Task<IList<League>> AllLeagues(AllLeagueOptions allleagueOptions = null)
+        public async Task<IList<LeagueResult>> AllLeagues(AllLeagueOptions allleagueOptions = null)
         {
-            var url = "https://soccer.sportmonks.com/api/v2.0"
+            var url = BaseUrl
                 .AppendPathSegment("leagues")
                 .SetQueryParam("api_token", _apiToken);
 
@@ -27,6 +25,18 @@ namespace SportsMonk.SportMonkClient
             }
                 
             var response = await url.GetJsonAsync<AllLeaguesResponse>();
+            return response.Data;
+        }
+
+        public async Task<IList<StandingResult>> Standing(int seasonId)
+        {
+            var url = BaseUrl
+                .AppendPathSegment("standings")
+                .AppendPathSegment("season")
+                .AppendPathSegment(seasonId)
+                .SetQueryParam("api_token", _apiToken);
+
+            var response = await url.GetJsonAsync<StandingResponse>();
             return response.Data;
         }
     }
