@@ -7,7 +7,7 @@ namespace SportsMonk.SportMonkClient.Models.Standings
         [JsonProperty("id")]
         public int Id { get; set; }
 
-        [JsonProperty("name")]
+        [JsonProperty("name")] 
         public string Name { get; set; }
 
         [JsonProperty("league_id")]
