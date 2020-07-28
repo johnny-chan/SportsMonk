@@ -1,12 +1,12 @@
 ﻿using System.Collections.Generic;
 using Newtonsoft.Json;
 
-namespace SportsMonk.SportMonkClient.Models.League
+namespace SportsMonk.SportMonkClient.Models.Standings
 {
-    public class AllLeaguesResponse
+    public class StandingResponse
     {
         [JsonProperty("data")]
-        public List<LeagueResult> Data { get; set; }
+        public List<StandingResult> Data { get; set; }
 
         [JsonProperty("meta")]
         public Meta Meta { get; set; }
