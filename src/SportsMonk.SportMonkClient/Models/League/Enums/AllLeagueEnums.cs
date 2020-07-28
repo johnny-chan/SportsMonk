@@ -4,13 +4,10 @@ namespace SportsMonk.SportMonkClient.Models.League.Enums
 {
     public enum AllLeagueEnums
     {
-        [JsonProperty("Season")]
-        Season,
+        [JsonProperty("Season")] Season,
 
-        [JsonProperty("Seasons")]
-        Seasons,
+        [JsonProperty("Seasons")] Seasons,
 
-        [JsonProperty("Country")]
-        Country
+        [JsonProperty("Country")] Country
     }
 }

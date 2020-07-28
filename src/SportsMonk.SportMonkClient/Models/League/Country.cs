@@ -6,6 +6,5 @@ namespace SportsMonk.SportMonkClient.Models.League
     {
         [JsonProperty("SeasonData")]
         public CountryData Data { get; set; }
-
     }
 }

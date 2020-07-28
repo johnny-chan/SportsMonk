@@ -1,6 +1,6 @@
-﻿    using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 
-    namespace SportsMonk.SportMonkClient.Models
+namespace SportsMonk.SportMonkClient.Models
 {
     public partial class Coverage
     {
