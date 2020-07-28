@@ -46,7 +46,7 @@ steps:
     packagesToPush: '$(Build.ArtifactStagingDirectory)/**/*.nupkg;!$(Build.ArtifactStagingDirectory)/**/*.symbols.nupkg'
     publishVstsFeed: 'SportsMonkClient/SportsMonk.Api.DotNetClient'
     versioningScheme: 'off'
-    allowPackageConflicts: true
+    allowPackageConflicts: false
 
 # - task: PublishTestResults@2
 #   inputs:
