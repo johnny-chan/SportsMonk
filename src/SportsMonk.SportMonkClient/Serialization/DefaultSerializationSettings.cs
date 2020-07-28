@@ -13,7 +13,7 @@ namespace SportsMonk.SportMonkClient.Serialization
             NullValueHandling = NullValueHandling.Ignore,
             Converters =
             {
-                new IsoDateTimeConverter { DateTimeStyles = DateTimeStyles.AssumeUniversal }
+                new IsoDateTimeConverter {DateTimeStyles = DateTimeStyles.AssumeUniversal}
             },
         };
     }

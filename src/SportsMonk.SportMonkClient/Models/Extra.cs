@@ -30,6 +30,5 @@ namespace SportsMonk.SportMonkClient.Models
 
         [JsonProperty("flag")]
         public string Flag { get; set; }
-
     }
 }

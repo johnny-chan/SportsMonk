@@ -4,11 +4,10 @@ namespace SportsMonk.SportMonkClient.Models.Standings
 {
     public class SeasonData
     {
-
         [JsonProperty("id")]
         public int Id { get; set; }
 
-        [JsonProperty("name")]
+        [JsonProperty("name")] 
         public string Name { get; set; }
 
         [JsonProperty("league_id")]
@@ -22,6 +21,5 @@ namespace SportsMonk.SportMonkClient.Models.Standings
 
         [JsonProperty("current_stage_id")]
         public object CurrentStageId { get; set; }
-
     }
 }

@@ -4,7 +4,6 @@ namespace SportsMonk.SportMonkClient.Models.Standings
 {
     public class StandingData
     {
-
         [JsonProperty("position")]
         public int Position { get; set; }
 
@@ -49,6 +48,5 @@ namespace SportsMonk.SportMonkClient.Models.Standings
 
         [JsonProperty("status")]
         public object Status { get; set; }
-
     }
 }

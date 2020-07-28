@@ -23,7 +23,7 @@ namespace SportsMonk.SportMonkClient
             {
                 url.SetQueryParam("include", string.Join(',', allleagueOptions.Options));
             }
-                
+
             var response = await url.GetJsonAsync<AllLeaguesResponse>();
             return response.Data;
         }
