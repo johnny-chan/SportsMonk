@@ -4,7 +4,6 @@ namespace SportsMonk.SportMonkClient.Models.Standings
 {
     public class Overall
     {
-
         [JsonProperty("games_played")]
         public int GamesPlayed { get; set; }
 
@@ -22,6 +21,5 @@ namespace SportsMonk.SportMonkClient.Models.Standings
 
         [JsonProperty("goals_against")]
         public int GoalsAgainst { get; set; }
-
     }
 }
