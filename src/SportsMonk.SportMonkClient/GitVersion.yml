@@ -1,7 +1,9 @@
-assembly-versioning-scheme: MajorMinorPatch
-mode: ContinuousDelivery
-continuous-delivery-fallback-tag: ''
-branches: {}
+mode: Mainline 
+next-version: 1.0.0 
+branches:
+ feature:
+   tag: alpha
+ master:
+ tag: '' 
 ignore:
-  sha: []
-merge-message-formats: {}
+ sha: []
